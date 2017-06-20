@@ -1,7 +1,7 @@
 <?php
 
 function HtmlHeader() {
-    echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
+    echo '<!DOCTYPE html>';
     echo "\n";
     echo '<head>';
     echo "\n";
@@ -23,7 +23,7 @@ function HtmlHeader() {
 
 function HtmlFooter() {
     echo "<br/><br/>\n";
-    echo "\n<a href='https://github.com/soft9000/turnstile/'>Soft9000.com Turnstile Project</a>";
+    echo "\n<a href='https://github.com/soft9000/Turnstile/'>Soft9000.com Turnstile Project</a>";
     echo "\n";
     echo '</body>';
     echo '</html>';
