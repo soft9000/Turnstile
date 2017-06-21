@@ -4,7 +4,6 @@ include_once "showTurnstile.php";
 
 include_once "messageForms.php";
 
-$form = null;
 
 $req = getRequest();
 
@@ -14,6 +13,7 @@ $control = $req['control'];
 if ($control) {
     doControl($control);
 } else {
+    $form = null;
     $op = $req['op'];
     switch ($op) {
         case 'create':
@@ -32,8 +32,6 @@ if ($control) {
             showTurnstile();
             return;
     }
+    showTurnstileWith($form);
 }
-
-showTurnstileWith($form);
-
 ?>
